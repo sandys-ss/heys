@@ -1,0 +1,215 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Heys Portfolio | Data Analyst</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="title"><h2>DATA ANALYST PORTFOLIO</h2></span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Employee Termination with Excel</h1>
+							<span class="image main"><img src="images/header/Header-Banner-03.png" alt="" height="300" /></span>
+
+							<h2>Introduction</h2>
+							<p>The employee termination dataset to be analyzed in this study contains information about employees in a company. 
+								This data will be used to understand the characteristics of employee termination and identify factors that contribute 
+								to employee termination.</p>
+							<p>Objective :</p>
+							<li>Calculate the total number of employees with active status each year</li>
+							<li>Calculate the number of terminated employees each year</li>
+							<li>Ratio of termination employees each year</li>
+							<li>Business unit with the highest number of terminations each year</li>
+							<li>Departments with the smallest and largest number of terminations</li>
+							<li>Average age of employees per department</li>
+							<li>Average age of employees with termination status</li>
+							<li>Reasons for termination</li>
+							<li>Average length of service of terminated employees</li>
+
+							<br>
+							<h2>1. Data Understanding</h2>
+							<p>The dataset is in csv file, and consists of several columns :</p>
+							<li>EmployeeID - a unique id for each employee.</li>
+							<li>recorddate_key - the date when the employee was recorded in the system.</li>
+							<li>birthdate_key - the employee's date of birth.</li>
+							<li>orighiredate_key - the date the employee first started working for the company.</li>
+							<li>terminationdate_key - the date when the employee stopped working.</li>
+							<li>age - the age of the employee.</li>
+							<li>length_of_service - the length of time the employee has worked for the company.</li>
+							<li>city_name - the name of the city where the employee works.</li>
+							<li>department_name - the name of the department where the employee works.</li>
+							<li>job_title - the employee's position in the company.</li>
+							<li>store_name - the name of the store where the employee works.</li>
+							<li>gender_short - the code for the employee's gender.</li>
+							<li>gender_full - the gender of the employee.</li>
+							<li>termreason_desc - description of the reason for the employee's termination.</li>
+							<li>termtype_desc - the type of employee termination.</li>
+							<li>STATUS_YEAR - the year of the employee's status.</li>
+							<li>STATUS - the employee's status with the company.</li>
+							<li>BUSINESS_UNIT - the business unit where the employee works.</li>
+
+							<br>
+							<h2>2. Data Preparation</h2>
+							<li>Convert dataset in to table</li>
+							<img src="images/project-03/2.1.dataset.png" alt="" height="500" /><br><br>
+							<img src="images/project-03/2.2.dataset-table.png" alt="" height="500" /><br><br>
+							<img src="images/project-03/2.3.dataset-table.png" alt="" height="500" /><br><br>
+
+							<li>Check column and row</li>
+							<img src="images/project-03/2.4.column-row.png" alt="" height="500" /><br><br>
+
+							<li>Check duplicated</li>
+							<img src="images/project-03/2.5.find-duplicated.png" alt="" height="500" /><br><br>
+
+							<li>Check missing value</li>
+							<img src="images/project-03/2.6.missing-value.png" alt="" height="500" /><br><br>
+
+							<li>Check date column</li>
+							<img src="images/project-03/2.7.date-format.png" alt="" height="500" /><br><br>
+							<img src="images/project-03/2.8.date-format-update.png" alt="" height="500" /><br><br>
+
+							<h2>3. Exploratory Data Analysis</h2>
+
+							<li>Calculate the total number of employees with active status each year</li><br>
+							<img src="images/project-03/3.1.1.employee-active.png" alt="" height="200" /><br><br>
+							<img src="images/project-03/3.1.2.grafik-employee-active.png" alt="" height="300" /><br><br>
+							<p>Based on the graph of the number of employees with active status, the number of employees continued to increase 
+								from 2011 to 2013. However, there was a decrease in the number of employees in 2014 and 2015</p>
+
+							<li>Calculate the number of terminated employees each year</li><br>
+							<img src="images/project-03/3.2.1.employee-terminated.png" alt="" height="200" /><br><br>
+							<img src="images/project-03/3.2.2.employee-terminated.png" alt="" height="300" /><br><br>
+							<p>The number of terminated employees in 2014 and 2015 was the highest compared to previous years. That is likely the
+								 cause of the decrease in the number of employees in 2014 and 2015.</p>
+
+							<li>Ratio of termination employees each year</li><br>
+							<img src="images/project-03/3.3.1.ratio-terminated.png" alt="" height="200" /><br><br>
+							<img src="images/project-03/3.3.2.ratio-terminated.png" alt="" height="300" /><br><br>
+							<p>If calculated based on the ratio, then 2014 is the largest ratio for terminated employees (4.9%). Meanwhile, 2013 was 
+								the year with the smallest terminated ratio at 2%. The same year, 2013, had the largest number of employees in the company.</p>
+
+							<li>Business unit with the highest number of terminations each year</li><br>
+							<img src="images/project-03/3.4.1.ratio-terminated-unit-bisnis.png" alt="" height="200" /><br><br>
+							<img src="images/project-03/3.4.2.ratio-terminated-unit-bisnis.png" alt="" height="300" /><br><br>
+							<p>If calculating based on the number of terminated employees, the store business unit has the most terminated employees, which is
+								 95% of the total terminated employees. While 5% comes from the Head Office. However, if you look at the ratio of terminated
+								 employees, it is the head office that is higher at 11.8% and the store with a ratio of 2.9%</p>
+
+							<li>Departments with the smallest and largest number of terminations</li><br>
+							<img src="images/project-03/3.5.1.ratio-terminated-department.png" alt="" height="300" /><br><br>
+							<img src="images/project-03/3.5.2.ratio-terminated-department.png" alt="" height="300" /><br><br>
+							<img src="images/project-03/3.5.3.ratio-terminated-department.png" alt="" height="300" /><br><br>
+							<p>The Meats department has the highest total terminated employees of 377 employees then the produce department of 353 and the
+								 customer service department of 262. However, these departments have a relatively small terminated ratio, namely the Meats
+								 department (3.7%), the Produce department (4.1%) and the Customer Service department (3.7%). The largest terminated ratio
+								 is found in the Information Technology department, which is 25%.</p>
+
+							<li>Average age of employees per department</li><br>
+							<img src="images/project-03/3.6.1.age-active.png" alt="" height="400" /><br><br>
+							<p>The average age for employees with active status is 42 years old with the highest average age in the HR Technology department
+								 at 60 years old and the lowest in the Customer Service department at 32 years old.</p>
+
+							<li>Average age of employees with termination status</li><br>
+							<img src="images/project-03/3.7.1.age-terminated.png" alt="" height="400" /><br><br>
+							<p>The average age for employees with terminated status is 51 years old with the highest average age in the Accounting department
+								 at 65 years old and the lowest in the Customer Service department at 28 years old.</p>
+							<img src="images/project-03/3.7.2.age-terminated.png" alt="" height="300" /><br><br>
+							<p>The average age of employees with active status is lower than the average age of employees with terminated status except for 
+								Executives who have no history of termination from the beginning until 2015 and Customer Service whose average age of active
+								employees is higher than employees with terminated status.</p>
+
+							<li>Reasons for termination</li><br>
+							<img src="images/project-03/3.8.1.reason-terminated.png" alt="" height="200" /><br><br>
+							<img src="images/project-03/3.8.2.reason-terminated.png" alt="" height="300" /><br><br>
+							<p>Based on the annual trend, the drastic decline in the number of employees in 2014 and 2015 was caused by layoffs of 142 employees
+								 in 2014 and 73 employees in 2015. Layoffs only occurred in that year, throughout the history of employee data in this company.</p>
+							<img src="images/project-03/3.8.3.reason-terminated.png" alt="" height="300" /><br><br>
+							<p>Retirement is the largest for employees with terminated status at 60%, then Resignaton at 26% and Layoff at 14%.</p>
+
+							<li>Average length of service of terminated employees</li><br>
+							<img src="images/project-03/3.9.1.masa-kerja-terminated.png" alt="" height="400" /><br><br>
+							<img src="images/project-03/3.9.2.masa-kerja-terminated.png" alt="" height="300" /><br><br>
+							<p>Based on the matrix above, it is known that most employees are retired with a service period between 5-10 years (21.9%) and above
+								 10 years (78.1%). As for the most resignaton employees with a service period of 1-5 years and the most layoff employees with
+								 a service period of > 10 years (49.1%).</p>
+
+							<br>
+							<h2>4. Conclusion</h2>
+							<p>Based on the analysis of employee termination data, it is known that there is a trend of employee growth from 2011 to 2013. However,
+								 in 2014 and 2015 the number of employees continued to decline. This happened because the company carried out a layoff policy in 2014
+								 (142 employees) or around 2.9% of total employees and 2015 (73 employees) or 1.5% of total employees in that year. This layoff policy
+								 is also mostly imposed on employees with more than 10 years of service with an average age of 51 years, where in the Customer Service
+								 division the average age is 28 years and in Accounting the average age is 65 years. In addition, the number of employees who are most
+								 often terminated are employees from the Store business unit, namely in the Meats, Produce and Customer Service departments.</p>
+
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Contact</h2>
+								<ul class="icons">
+									<li><a href="https://twitter.com/sandyss_" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="https://www.linkedin.com/in/heys00/" class="icon brands style2 fa-linkedin-in"><span class="label">Linkedink</span></a></li>
+									<li><a href="https://github.com/sandys-ss" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+
+
+
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			
+
+	</body>
+</html>
