@@ -1,0 +1,60 @@
+/* =================================================================== */
+/* Blue #007bff
+====================================================================== */
+
+.accent,
+.social ul li a:hover,
+.leftbottom > a:hover,
+.meta i {
+    color: #007bff;
+}
+
+.btn-primary-rtl,
+.yes,
+.btn-primary,
+.home .home-content h1:before,
+.title,
+.squares div:nth-child(n+10),
+.arrow:before,
+.arrow:after,
+.arrow-inner:after,
+.arrow-inner:before,
+.home .home-content p:before,
+.portfolio-grid .heading p:before,
+.about .box-stats p:before,
+.portfolio-items .details .heading > div,
+.portfolio-items .details .heading > div:before,
+.btn-secondary:before,
+.btn-secondary:hover,
+.freelance>span:before,
+.layers > div:first-child,
+.layers > div:nth-child(3),
+.layers > div:nth-child(5),
+.leftbottom > a:before,
+.blog-page .blog-content .post .category,
+.blog-page .loadmore span {
+    background-color: #007bff;
+}
+
+.portfolio-items .details .heading > div:after,
+.loader {
+    border-top-color: #007bff;
+}
+
+.arrow svg.hover path,
+.social ul.social li a:hover svg,
+.skin svg path {
+    fill: #007bff;
+}
+
+.about .content .img-container:before {
+    border: 4px solid #007bff;
+}
+
+@media (max-width: 767px)  {
+
+    .about .box-stats h4:after {
+        color: #007bff;
+    }
+
+}
